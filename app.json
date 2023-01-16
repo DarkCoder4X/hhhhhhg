@@ -1,26 +1,22 @@
 {
-  "name": "Music Downloader Bot ",
-  "description": "Unknown",
-  "repository": "https://github.com/Sadew451/SongDlBot",
-  "logo": "https://telegra.ph/file/411aba3150413fb570305.jpg",
-  "keywords": ["telegram", "Music bot", "sadew451","telegram bot"],
-  "env": {
-     "BOT_TOKEN": {
-      "description": "Your Bot token from @Botfather",
-      "value": ""
-    },
-    "API_ID": {
-      "description": "Your API_ID from https://my.telegram.org/apps ",
-      "value": ""
-    },
-    "API_HASH": {
-      "description": "Your API_HASH from https://my.telegram.org/apps",
-      "value": ""
+    "name": "OCR Bot",
+    "description": "Telegram Bot to Extract Text from Image",
+    "repository": "https://github.com/DeccanBotz/OCR",
+    "logo": "https://telegra.ph/file/f48ff733ca4d1621a4097.jpg",
+    "keywords": ["DeccanBotz", "ocr", "Text Extractor", "Optical Character Recognition"],
+    "env":{
+        "BOT_TOKEN":{
+            "description":"Your Bot Token from @Botfather",
+            "required":"True"
+        },
+        "API_KEY":{
+            "description":"Your Api key from https://ocr.space/ocrapi",
+            "required":"True"
+        },
+        "OWNER":{
+            "description":"Your Username without '@'",
+            "required":"True"
+        }
     }
-   },
-   "buildpacks": [
-    {
-      "url": "heroku/python"
-    }
-  ]
+
 }
